@@ -22,10 +22,10 @@ void setup() {
 }
 
 void loop() {
-  uint8_t v = detecter();
+  char v = detecter();
   char m[10] = {'l','r','c','d','l','r','d',};
-  // followMe(v);
+  followMe(v);
   count = counter(v,count);
   mission(v,m,count);
-  // Serial.printf("%d",count);
+  
 }
